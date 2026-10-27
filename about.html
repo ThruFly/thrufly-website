@@ -574,7 +574,8 @@ header.site.open .menubtn .bars i{opacity:0}
 .team-bg .hctl{position:absolute;top:auto;bottom:14px;right:14px;z-index:3}
 @media (prefers-reduced-motion:reduce){.team-bg video.bgvid{display:none}}
 .person img{width:80%;margin:20px auto 0;display:block;border-radius:calc(var(--radius) - 4px)}
-@media (max-width:900px){.person img{width:100%;margin:0;border-radius:0}}
+@media (max-width:900px){.person{grid-template-columns:120px 1fr}.person img{width:100%;margin:0;border-radius:0}}
+@media (max-width:560px){.person{grid-template-columns:1fr}.person img{width:80%;height:auto;margin:16px auto 0;border-radius:calc(var(--radius) - 4px)}}
 .social{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.social .slabel{font-weight:600;color:var(--muted)}
 .social ul{display:flex;gap:10px;list-style:none;margin:0;padding:0}
 .sico{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#e8f1ff;color:var(--navy-900);transition:background .2s,color .2s,transform .2s}
