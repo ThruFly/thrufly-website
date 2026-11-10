@@ -574,6 +574,7 @@ header.site.open .menubtn .bars i{opacity:0}
 .team-bg .hctl{position:absolute;top:auto;bottom:14px;right:14px;z-index:3}
 @media (prefers-reduced-motion:reduce){.team-bg video.bgvid{display:none}}
 .team{grid-template-columns:repeat(2,minmax(0,308px));justify-content:center;gap:28px}
+.tm{display:flex;flex-direction:column;gap:10px;min-width:0}.tm .person{flex:1}.tml{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#9fe3ff}
 .person img{width:calc(100% - 16px);margin:8px auto 0;display:block;border-radius:calc(var(--radius) - 4px)}
 @media (max-width:900px){.team{grid-template-columns:minmax(0,1fr);justify-content:stretch}.person{grid-template-columns:120px 1fr}.person img{width:100%;margin:0;border-radius:0}}
 @media (max-width:560px){.team{grid-template-columns:minmax(0,308px);justify-content:center}.person{grid-template-columns:1fr}.person img{width:calc(100% - 16px);height:auto;margin:8px auto 0;border-radius:calc(var(--radius) - 4px)}}
@@ -684,13 +685,13 @@ body{padding-bottom:0!important}
 <section id="team" class="white team-bg"><video class="bgvid" data-bg autoplay muted loop playsinline preload="auto" poster="assets/img/poster-brand-bg.jpg" aria-hidden="true" tabindex="-1"><source src="assets/video/brand-bg.mp4" type="video/mp4"></video>
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow" style="color:var(--blue-text)">Leadership</span>
+      <span class="eyebrow" style="color:var(--blue-text)">Team</span>
       <h2>Built by aviation professionals.</h2>
       <p><strong>More than 20 years of combined experience across aviation, logistics and information technology.</strong></p>
     </div>
     <div class="team">
-      <article class="person ui"><img src="assets/img/linroy.jpg" alt="Linroy Powell" loading="lazy"><div class="txt"><h3>Linroy Powell</h3><div class="role">Founder &middot; Strategic Lead</div><p>Retired U.S. Army officer and aviator focused on turning frontline ground operations into connected, data-driven procedures.</p></div></article>
-      <article class="person ui"><img src="assets/img/dexter.jpg" alt="Dexter Powell" loading="lazy"><div class="txt"><h3>Dexter Powell</h3><div class="role">Technical Advisor &middot; Database &amp; Systems Engineering</div><p>U.S. Air Force veteran responsible for ThruFly's systems and data foundation.</p></div></article>
+      <div class="tm"><div class="tml">Leadership</div><article class="person ui"><img src="assets/img/linroy.jpg" alt="Linroy Powell" loading="lazy"><div class="txt"><h3>Linroy Powell</h3><div class="role">Founder &middot; Strategic Lead</div><p>Retired U.S. Army officer and aviator focused on turning frontline ground operations into connected, data-driven procedures.</p></div></article></div>
+      <div class="tm"><div class="tml">Advisors</div><article class="person ui"><img src="assets/img/dexter.jpg" alt="Dexter Powell" loading="lazy"><div class="txt"><h3>Dexter Powell</h3><div class="role">Technical Advisor &middot; Database &amp; Systems Engineering</div><p>U.S. Air Force veteran responsible for ThruFly's systems and data foundation.</p></div></article></div>
     </div>
   </div>
 </section>

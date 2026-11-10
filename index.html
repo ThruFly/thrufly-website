@@ -579,6 +579,7 @@ header.site.open .menubtn .bars i{opacity:0}
 .team-bg .hctl{position:absolute;top:auto;bottom:14px;right:14px;z-index:3}
 @media (prefers-reduced-motion:reduce){.team-bg video.bgvid{display:none}}
 .team{grid-template-columns:repeat(2,minmax(0,308px));justify-content:center;gap:28px}
+.tm{display:flex;flex-direction:column;gap:10px;min-width:0}.tm .person{flex:1}.tml{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#9fe3ff}
 .person img{width:calc(100% - 16px);margin:8px auto 0;display:block;border-radius:calc(var(--radius) - 4px)}
 @media (max-width:900px){.team{grid-template-columns:minmax(0,1fr);justify-content:stretch}.person{grid-template-columns:120px 1fr}.person img{width:100%;margin:0;border-radius:0}}
 @media (max-width:560px){.team{grid-template-columns:minmax(0,308px);justify-content:center}.person{grid-template-columns:1fr}.person img{width:calc(100% - 16px);height:auto;margin:8px auto 0;border-radius:calc(var(--radius) - 4px)}}
@@ -618,7 +619,7 @@ form.card input,form.card select,form.card textarea,form.card label{max-width:10
 <!-- Optional privacy-friendly analytics: paste ONE snippet here (e.g. Umami Cloud free tier, or Cloudflare Web Analytics). Click/form events below are sent automatically when it is present. -->
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"Organization","@id":"https://www.thrufly.com/#org","name":"ThruFly LLC","alternateName":"ThruFly","url":"https://www.thrufly.com/","logo":"https://www.thrufly.com/assets/img/favicon.png","email":"info@thrufly.com","slogan":"A Better Connection","description":"ThruFly is building the operating layer for aviation ground operations: a mobile-first platform for ramp crews and the leaders who depend on them.","address":{"@type":"PostalAddress","addressLocality":"Tampa","addressRegion":"FL","addressCountry":"US"},"sameAs":["https://www.linkedin.com/company/thrufly"],"founder":[{"@type":"Person","name":"Linroy Powell","jobTitle":"Founder and Strategic Lead"},{"@type":"Person","name":"Dexter Powell","jobTitle":"Technical Advisor, Database and Systems Engineering"}]},
+{"@type":"Organization","@id":"https://www.thrufly.com/#org","name":"ThruFly LLC","alternateName":"ThruFly","url":"https://www.thrufly.com/","logo":"https://www.thrufly.com/assets/img/favicon.png","email":"info@thrufly.com","slogan":"A Better Connection","description":"ThruFly is building the operating layer for aviation ground operations: a mobile-first platform for ramp crews and the leaders who depend on them.","address":{"@type":"PostalAddress","addressLocality":"Tampa","addressRegion":"FL","addressCountry":"US"},"sameAs":["https://www.linkedin.com/company/thrufly"],"founder":[{"@type":"Person","name":"Linroy Powell","jobTitle":"Founder and Strategic Lead"}]},
 {"@type":"WebSite","@id":"https://www.thrufly.com/#site","url":"https://www.thrufly.com/","name":"ThruFly","publisher":{"@id":"https://www.thrufly.com/#org"}},
 {"@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"What does a pilot cost?","acceptedAnswer":{"@type":"Answer","text":"Pilot scope and terms, including cost, are agreed in writing before we start."}},
@@ -677,7 +678,7 @@ form.card input,form.card select,form.card textarea,form.card label{max-width:10
 <section class="proof" id="proof" aria-label="The team">
   <div class="wrap">
     <div>
-      <h2>Built by people who have worked the ramp.</h2>
+      <h2>Built by aviation professionals.</h2>
       <p class="sub"><b>Veteran-owned and operated.</b> More than 20 years of combined experience across aviation, logistics and information technology.</p>
     </div>
     <div class="pf">
