@@ -174,6 +174,8 @@ ol.tl.in::after{animation-play-state:running}
 .person h3{font-size:1.35rem}
 .person .role{color:var(--blue-text);font-weight:700;font-size:.95rem;margin:2px 0 10px}
 .person p{color:var(--muted);font-size:1rem}
+.person .card-link{display:inline-flex;align-items:center;gap:6px;margin-top:12px;min-height:44px;font-weight:700;font-size:.95rem;color:var(--blue-text);text-decoration:none}
+.person .card-link:hover{text-decoration:underline}
 
 /* pilot */
 .pilot{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
@@ -412,6 +414,11 @@ footer.site{background:var(--navy-950);color:#9fb6d3;padding:56px 0 32px;font-si
 .pf p{margin:0;min-width:0}
 .pf b{display:block;font-size:1rem;white-space:nowrap}
 .pf span{display:block;color:#9fd8ff;font-size:.8rem;line-height:1.3;margin-top:2px}
+.pf .pfqr{display:flex;flex-direction:column;align-items:center;gap:4px;margin-left:12px;flex:0 0 auto;text-decoration:none;color:#9fd8ff}
+.pf .pfqr img{width:64px;height:64px;flex:0 0 64px;border-radius:6px;background:#fff;padding:3px;object-fit:contain}
+.pf .pfqr small{font-size:.7rem;font-weight:600;white-space:nowrap}
+.pf .pfqr:hover small{text-decoration:underline}
+@media (max-width:640px){.pf .pfqr{margin-left:auto}}
 .proof .st{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding-top:18px;color:#b8c9de;font-size:.95rem}
 .proof .st b{color:#fff}
 .pill2{display:inline-block;background:rgba(0,194,255,.14);color:#9fe3ff;border:1px solid rgba(0,194,255,.35);border-radius:99px;padding:3px 12px;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-right:10px}
